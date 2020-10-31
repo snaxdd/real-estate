@@ -60,11 +60,6 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: `css/${fileName('css')}`
-    }),
-    new CopyPlugin({
-      patterns: [
-        { from: path.resolve(__dirname, 'src/data'), to: path.resolve(__dirname, 'bundle/data') }
-      ]
     })
   ],
   module: {
@@ -90,7 +85,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         loader: 'file-loader',
         options: {
           name: '[path][name][hash].[ext]'
