@@ -1,6 +1,8 @@
 .home-slider__text
   padding-top: 60px
   max-width: 600px
+  position: absolute
+  z-index: 1
 
 .home-slider__logo
   display: flex
@@ -53,3 +55,41 @@
     height: 2px
     width: 111px
     background-color: #6f50ff
+
+.home-slider
+  position: relative
+
+.home-slider__bg
+  display: flex
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 0
+
+.home-slider__bg-image-1
+  width: 304px
+  height: 580px
+  background-color: #ffedc2
+  border-radius: 10px 10px 0 10px
+  margin-right: 30px
+  background-image: url('~@images/home-slider/bg-image-1.png')
+  background-repeat: no-repeat
+  background-position: right bottom
+  position: relative
+
+.home-slider__bg-image-2
+  width: 469px
+  height: 661px
+  background-color: #dad7ff
+  border-radius: 10px
+  background-image: url('~@images/home-slider/bg-image-2.png')
+  background-repeat: no-repeat
+  background-position: left bottom
+
+.home-slider__prev
+  background-color: #ffd87b
+  border-radius: 10px 0px 10px 10px
+  position: absolute
+  right: 0
+  bottom: 0
+  transform: translateY(100%)
