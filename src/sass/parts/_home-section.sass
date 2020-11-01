@@ -4,6 +4,10 @@
   position: absolute
   z-index: 1
 
+.home
+  min-height: 661px
+  margin-bottom: 145px
+
 .home-slider__logo
   display: flex
   align-items: center
@@ -20,21 +24,10 @@
     text-transform: uppercase
     letter-spacing: 5.4px
 
-.home-slider__heading-text
-  margin: 0
-  color: #1f222e
-  font-family: "Inter-SemiBold"
-  font-size: 56px
-  font-weight: 400
-  line-height: 80px
+.home-slider__title
   margin-bottom: 30px
 
-.home-slider__description
-  font-family: 'Inter-Light'
-  color: #656e92
-  line-height: 36px
-  font-size: 16px
-  font-weight: 400
+.home-slider__subtitle
   margin-bottom: 57px
 
 .home-slider__link
@@ -78,6 +71,7 @@
   position: relative
 
 .home-slider__bg-image-2
+  position: relative
   width: 469px
   height: 661px
   background-color: #dad7ff
@@ -93,3 +87,20 @@
   right: 0
   bottom: 0
   transform: translateY(100%)
+  box-shadow: 0 20px 51px rgba(255, 216, 123, 0.29)
+  transition: 0.2s ease
+  &:hover
+    background-color: #ffe098
+
+.home-slider__next
+  background-color: #6f50ff
+  border-radius: 0 10px 10px
+  position: absolute
+  left: 0
+  bottom: 0
+  box-shadow: 0 20px 51px rgba(84, 80, 255, 0.29)
+  transition: 0.2s ease
+  &:hover
+    background-color: #7d60ff
+  & span
+    margin-right: 13px
