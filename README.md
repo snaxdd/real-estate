@@ -1,5 +1,10 @@
 Верстка по PSD макету - Real Estate
 ===================================
-Верстка по макету
-
-GitHub Pages - https://www.snaxdd.github.io/real-estate
+**GitHub Pages** - https://www.snaxdd.github.io/real-estate
+***
+**В работе использовал**
++Webpack
++SASS
++HTML
++JavaScript
++...
