@@ -67,7 +67,9 @@
             <div class="home-slider__bg-image-1">
               <div class="home-slider__prev slider__button">
                 <div class="slider__button-wrap">
-                  <img src="~@assets/icons/prev-arrow-white.png" alt="prev-arrow">
+                  <svg class="arrow-prev">
+                    <use href="~@assets/icons/sprite.svg#next-arrow"></use>
+                  </svg>
                   <span>Prev</span>
                 </div>
                 <!-- /.slider__button-wrap -->
@@ -79,7 +81,9 @@
               <div class="home-slider__next slider__button">
                 <div class="slider__button-wrap">
                   <span>Next</span>
-                  <img src="~@assets/icons/next-arrow-white.png" alt="prev-arrow">
+                  <svg class="arrow-next">
+                    <use href="~@assets/icons/sprite.svg#next-arrow"></use>
+                  </svg>
                 </div>
                 <!-- /.slider__button-wrap -->
               </div>
@@ -156,11 +160,17 @@
             <!-- /.choose-slider__subtitle -->
             <div class="choose-slider__controls">
               <div class="choose-slider__prev">
-                
+                <svg class="arrow-prev">
+                  <use href="~@assets/icons/sprite.svg#next-arrow"></use>
+                </svg>
+                <span>Prev</span>
               </div>
               <!-- /.choose-slider__prev -->
               <div class="choose-slider__next">
-
+                <span>Next</span>
+                <svg class="arrow-next">
+                  <use href="~@assets/icons/sprite.svg#next-arrow"></use>
+                </svg>
               </div>
               <!-- /.choose-slider__next -->
             </div>

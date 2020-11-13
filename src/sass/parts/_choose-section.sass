@@ -11,3 +11,33 @@
 
 .choose-slider__subtitle
   max-width: 550px
+  margin-bottom: 65px
+
+.choose-slider
+  &__controls
+    display: flex
+    justify-content: space-between
+    max-width: 300px
+    font-family: 'Inter-Medium'
+    color: $blue
+  &__prev
+    display: flex
+    align-items: center
+    cursor: pointer
+    & > span
+      margin-left: 15px
+    .arrow-prev
+      fill: $blue
+      width: 37px
+      height: 21px
+      transform: rotate(180deg)
+  &__next
+    display: flex
+    align-items: center
+    cursor: pointer
+    & > span
+      margin-right: 15px
+    .arrow-next
+      fill: $blue
+      width: 37px
+      height: 21px

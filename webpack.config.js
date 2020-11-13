@@ -93,7 +93,23 @@ module.exports = {
       },
       {
         test: /\.html$/i,
-        loader: 'html-loader'
+        loader: 'html-loader',
+        options: {
+          attributes: {
+            list: [
+              {
+                tag: 'use',
+                attribute: 'href',
+                type: 'src'
+              },
+              {
+                tag: 'img',
+                attribute: 'src',
+                type: 'src'
+              },
+            ]
+          }
+        }
       }
     ]
   }
