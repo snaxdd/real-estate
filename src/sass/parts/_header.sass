@@ -9,13 +9,24 @@
   text-transform: uppercase
   & > li
     margin-right: 80px
-    & > a 
+    & > a
       position: relative
       color: #8a8c93
       transition: 0.2s ease
-      &:hover 
-        color:#6f50ff
+      &::after
+        transition: 0.15s
+        content: ''
+        position: absolute
+        bottom: -15px
+        left: 25%
+        height: 2px
+        width: 50%
+        background-color: #6f50ff
+        opacity: 0
+      &:hover
+        color: #6f50ff
         &::after
+          transition: 0.15s
           content: ''
           position: absolute
           bottom: -8px
@@ -23,6 +34,7 @@
           height: 2px
           width: 50%
           background-color: #6f50ff
+          opacity: 1
     &:last-child
       margin-right: 0
 
@@ -33,4 +45,3 @@
 
 .header
   margin-bottom: 70px
-
